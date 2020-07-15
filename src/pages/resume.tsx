@@ -1,16 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
+import {
+  ResumeWrapper,
+  AboutSection,
+  PortfolioSection,
+} from "../style/resume-style"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = () => (
+const Resume = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <ResumeWrapper>
+      <AboutSection>
+        <h2>About Section</h2>
+      </AboutSection>
+      <PortfolioSection>
+        <h2>Portfolio Section</h2>
+      </PortfolioSection>
+    </ResumeWrapper>
   </Layout>
 )
 
-export default SecondPage
+export default Resume
