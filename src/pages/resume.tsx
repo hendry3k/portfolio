@@ -1,12 +1,22 @@
 import React from "react"
+<<<<<<< HEAD
 import { PageProps, Link, graphql } from "gatsby"
 import { Wrapper, Section, Header } from '../style/resume-style'
 
 
+=======
+import { Link } from "gatsby"
+import {
+  ResumeWrapper,
+  AboutSection,
+  PortfolioSection,
+} from "../style/resume-style"
+>>>>>>> resume
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+<<<<<<< HEAD
 import {ResumeTitle} from '../components/title'
 import {ResumeText} from '../components/text'
 import Headshot from '../components/headshot'
@@ -37,3 +47,19 @@ const ResumePage: React.FC<PageProps<ResumeProps>> = (ResumeProps) => (
 )
 
 export default ResumePage
+=======
+const Resume = () => (
+  <Layout>
+    <ResumeWrapper>
+      <AboutSection>
+        <h2>About Section</h2>
+      </AboutSection>
+      <PortfolioSection>
+        <h2>Portfolio Section</h2>
+      </PortfolioSection>
+    </ResumeWrapper>
+  </Layout>
+)
+
+export default Resume
+>>>>>>> resume
