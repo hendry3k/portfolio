@@ -17,11 +17,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+        <main>{children}</main>
     </>
   )
 }
