@@ -1,13 +1,13 @@
-import styled from "styled-components"
 
-export const ResumeWrapper = styled.div`
-  /* temp */
-  border: 1px solid red;
-`
-export const AboutSection = styled.section`
-  border: 1px solid green;
-`
+import styled from 'styled-components'
 
-export const PortfolioSection = styled.section`
-  border: 1px solid yellow;
+export const Wrapper = styled.div`
+    max-width: 80rem;
+`
+export const Section = styled.div`
+    width: 100%;
+`
+export const Header = styled.header`
+    max-width: 50rem;
+
 `

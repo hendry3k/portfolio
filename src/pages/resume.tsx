@@ -1,25 +1,38 @@
 import React from "react"
-import { Link } from "gatsby"
-import {
-  ResumeWrapper,
-  AboutSection,
-  PortfolioSection,
-} from "../style/resume-style"
+import { PageProps, Link, graphql } from "gatsby"
+import { Wrapper, Section, Header } from '../style/resume-style'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Resume = () => (
+import {ResumeTitle} from '../components/title'
+import {ResumeText} from '../components/text'
+import Headshot from '../components/headshot'
+
+
+type ResumeProps = {
+    name: string
+    aboutME: string
+}
+
+
+const ResumePage: React.FC<PageProps<ResumeProps>> = (ResumeProps) => (
   <Layout>
-    <ResumeWrapper>
-      <AboutSection>
-        <h2>About Section</h2>
-      </AboutSection>
-      <PortfolioSection>
-        <h2>Portfolio Section</h2>
-      </PortfolioSection>
-    </ResumeWrapper>
+    <SEO title="Hendry Khoza Resume" />
+
+    <Wrapper>
+        <Section>
+          <Header>
+            <Headshot />
+                <ResumeTitle text="Hendry Khoza"/>
+                <ResumeText text="Software Engineer"/>
+            </Header>
+        </Section>
+    </Wrapper>
+      {/*
+*/}
   </Layout>
 )
 
-export default Resume
+export default ResumePage
+
