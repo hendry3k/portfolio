@@ -17,11 +17,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-<<<<<<< HEAD
-        <main>{children}</main>
-=======
       <main>{children}</main>
->>>>>>> resume
     </>
   )
 }
