@@ -31,8 +31,6 @@ const ResumePage: React.FC<PageProps<ResumeProps>> = (ResumeProps) => (
             </Header>
         </Section>
     </Wrapper>
-      {/*
-*/}
   </Layout>
 )
 

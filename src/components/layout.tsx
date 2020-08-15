@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
+        <div className="top-bar"></div>
       <main>{children}</main>
     </>
   )
