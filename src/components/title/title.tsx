@@ -1,13 +1,15 @@
 import React from "react"
 
-type TitleProps = {
+interface TitleProps {
     text: string
-
 }
 
 
-export const ResumeTitle: React.FC<TitleProps> = ({text}) => {
-
-return (<h2>{text}</h2>)
+export const SubTitle: React.FC<TitleProps> = ({ text}: TitleProps) => {
+  return (<h2>{text}</h2>)
 }
 
+
+export const MainTitle: React.FC<TitleProps> = ({ text}: TitleProps) => {
+  return (<h2>{text}</h2>)
+}

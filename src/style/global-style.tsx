@@ -2,12 +2,14 @@ import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
 
-    *, *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-    :root {
+  *, *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :root {
         /* Dark Theme */
         --bg-color: #191818;
         --fg-color: #E6E6E6;
