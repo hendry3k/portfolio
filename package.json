@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "official website of Hendry Khoza",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-khoza/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Hendry Khoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h-khoza/portfolio/issues"
+  },
+  "homepage": "https://github.com/h-khoza/portfolio#readme",
+  "devDependencies": {
+    "css-loader": "^4.2.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
