@@ -8,5 +8,5 @@ loader.addEventListener("click", e => {
   loader.classList.remove("loading")
 })
 
-  loader.classList.remove("loading")
+loader.classList.remove("loading")
 console.log("Hello Hendry's portfolio")

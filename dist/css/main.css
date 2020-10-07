@@ -7,8 +7,7 @@
 body {
   color: #e5e5e5;
   background-color: #1d2021;
-  border-top: 2px solid #9d0006;
-  padding: 3rem 0;
+  padding: 8rem 0 4rem 0;
   line-height: 1.6;
   /* 1 */
   font-family: "Merriweather", serif;
@@ -43,21 +42,71 @@ body a:active {
 body strong {
   font-size: 1.1rem;
 }
-body .page-wrapper {
+body .page-wrapper,
+body .nav-wrapper {
   max-width: 42.5rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
 body .page-wrapper .title {
-  font-size: 1.85rem;
+  font-size: 1.5rem;
 }
 body .page-wrapper .text {
   padding: 0 0 0 1em;
   font-size: 1rem;
 }
+body .navbar {
+  border-top: 2px solid #9d0006;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #29292c;
+  z-index: 99;
+}
+body .navbar .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .navbar .nav-wrapper .logo {
+  font-size: 1.25rem;
+  font-family: "Lora";
+  font-weight: bold;
+  line-height: 1.1;
+  /* 1 */
+}
+body .navbar .nav-wrapper ul {
+  list-style: none;
+}
+body .navbar .nav-wrapper ul > :not(:last-child) {
+  margin-right: 1em;
+}
+body .navbar .nav-wrapper ul li {
+  display: inline-block;
+  border-radius: 5px;
+}
+body .navbar .nav-wrapper ul li a {
+  padding: 2px 16px;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+body .navbar .nav-wrapper .blog-btn {
+  background-color: #076678;
+}
+body .navbar .nav-wrapper .blog-btn a:active,
+body .navbar .nav-wrapper .blog-btn a:hover {
+  background-color: #458588;
+  text-decoration: none;
+  border-radius: 5px;
+}
 @media only screen and (min-width: 36.25rem) {
   body hr {
     margin-top: 5rem;
+  }
+  body .navbar .nav-wrapper .logo {
+    font-size: 1.5rem;
   }
   body .page-wrapper .title {
     font-size: 2.25rem;

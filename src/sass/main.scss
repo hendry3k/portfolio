@@ -13,15 +13,13 @@ $blue-color: #d4c4a1;
 body {
   color: $fg-color;
   background-color: $bg-color;
-  border-top: 2px solid $red-color;
-  padding: 3rem 0;
+  padding: 8rem 0 4rem 0;
   line-height: 1.6; /* 1 */
   font-family: "Merriweather", serif;
-  
+
   .loader {
     display: none;
   }
-
 
   h1,
   h2,
@@ -37,7 +35,7 @@ body {
 
   a {
     transition: all 0.5s ease;
-        opacity: 1;
+    opacity: 1;
   }
   a:link,
   a:visited {
@@ -55,38 +53,110 @@ body {
     font-size: 1.1rem;
   }
 
-  .page-wrapper {
+  // content max- withh
+  .page-wrapper,
+  .nav-wrapper {
     max-width: 42.5rem;
     margin: 0 auto;
     padding: 0 1rem;
+  }
 
-    .title {
-      font-size: 1.85rem;
-      // padding: 0 1rem;
-    }
+  .page-wrapper .title {
+    font-size: 1.5rem;
+  }
+  .page-wrapper .text {
+    padding: 0 0 0 1em;
+    font-size: 1rem;
+  }
 
-    .text {
-      padding: 0 0 0 1em;
-      font-size: 1rem;
+  .navbar {
+    border-top: 2px solid $red-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #29292c;
+    z-index: 99;
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        font-size: 1.25rem;
+        font-family: "Lora";
+        font-weight: bold;
+        line-height: 1.1; /* 1 */
+      }
+      ul {
+        list-style: none;
+
+        & > :not(:last-child) {
+          margin-right: 1em;
+        }
+        li {
+          display: inline-block;
+          border-radius: 5px;
+          // overflow: hidden;
+          a {
+            padding: 2px 16px;
+            height: 100%;
+            width: 100%;
+          display: inline-block;
+          }
+        }
+      }
+      .blog-btn {
+        background-color: #076678;
+          // padding: 10px 18px;
+
+      a:active,
+      a:hover {
+        background-color: #458588;
+        text-decoration: none;
+          border-radius: 5px;
+
+      }
+        // a {
+        // }
+      }
     }
   }
 
   @media only screen and (min-width: 36.25rem) {
-  hr {
-    margin-top: 5rem;
-  }
+
+    hr {
+      margin-top: 5rem;
+    }
+
+    .navbar {
+      .nav-wrapper {
+
+        .logo {
+        font-size: 1.5rem;
+
+        }
+      }
+
+    }
+
+
+        
+
 
     .page-wrapper {
       //
       .title {
         font-size: 2.25rem;
-        opacity: .9;
+        opacity: 0.9;
       }
       .text {
         font-size: 1.05rem;
-        opacity: .9;
-      padding: 0 0 0 2em;
+        opacity: 0.9;
+        padding: 0 0 0 2em;
       }
     }
   }
+  
 }
