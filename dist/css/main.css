@@ -42,6 +42,23 @@ body a:active {
 body strong {
   font-size: 1.1rem;
 }
+body .social-links {
+  padding: 1em 0;
+  display: flex;
+}
+body .social-links > :not(:last-child) {
+  margin-right: 1em;
+}
+body .social-links a {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+body .social-links a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5em;
+}
 body .page-wrapper,
 body .nav-wrapper {
   max-width: 42.5rem;
