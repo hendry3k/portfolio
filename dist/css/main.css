@@ -27,7 +27,7 @@ body hr {
   margin-top: 3rem;
 }
 body a {
-  transition: all 0.5s ease;
+  transition: text 5s ease;
   opacity: 1;
 }
 body a:link,
