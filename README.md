@@ -8,4 +8,4 @@ improve our daily lives. For instance, I recently switched to using [Ubuntu](htt
 and I managed to automate some repetitive task on my work-flow and it made me
 productive and encouraged me to contribute to [open-source](https://en.wikipedia.org/wiki/Open_source).
 
-*Read [more](hendry3k.github.io)*
+*Read [more](https://hendry3k.github.io)*
