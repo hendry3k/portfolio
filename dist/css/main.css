@@ -69,6 +69,12 @@ body .nav-wrapper {
 body .page-wrapper .title {
   font-size: 1.5rem;
 }
+body .subtext {
+  margin-top: 0;
+  display: block;
+  font-size: 0.875rem;
+  transform: translateY(-1rem);
+}
 body .page-wrapper .text {
   padding: 0 0 0 1em;
   font-size: 1rem;
