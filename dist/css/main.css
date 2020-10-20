@@ -76,7 +76,7 @@ body .subtext {
   transform: translateY(-1rem);
 }
 body .page-wrapper .text {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 0.5em;
   font-size: 1rem;
 }
 body .navbar {
@@ -139,7 +139,6 @@ body .navbar .nav-wrapper .blog-btn a:hover {
   body .page-wrapper .text {
     font-size: 1.05rem;
     opacity: 0.9;
-    padding: 0 0 0 2em;
   }
 }
 body footer {
