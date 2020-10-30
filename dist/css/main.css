@@ -60,9 +60,10 @@ body .social-links a svg {
   height: 1rem;
   margin-right: 0.5em;
 }
+body .blog-wrapper,
 body .page-wrapper,
 body .nav-wrapper {
-  max-width: 42.5rem;
+  max-width: 45rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -143,6 +144,36 @@ body .navbar .nav-wrapper .blog-btn a:hover {
 }
 body footer {
   font-size: 0.875rem;
+}
+
+.blog-wrapper span.date,
+.blog-wrapper p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  margin: 0 0 0.5em 0;
+}
+.blog-wrapper span.date {
+  display: inline-block;
+  opacity: 0.4;
+}
+
+.post-list .post {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.post-list .post .post-thumnail {
+  min-width: 15rem;
+}
+.post-list .post .post-thumnail img {
+  width: 100%;
+}
+.post-list .post .post-details {
+  padding-left: 1rem;
+}
+.post-list .post .post-details .post-title {
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */
