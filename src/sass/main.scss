@@ -14,6 +14,7 @@ body {
   color: $fg-color;
   background-color: $bg-color;
   margin: 0;
+  font-size: 1rem;
   line-height: 1.6; /* 1 */
   font-family: "Merriweather", serif;
 
@@ -53,6 +54,12 @@ body {
     font-size: 1.1rem;
   }
 
+  p {
+    font-family: "Merriweather", serif;
+    opacity: 0.9;
+    font-size: 1.05rem;
+  }
+
   .social-links {
     padding: 1em 0;
     display: flex;
@@ -86,6 +93,10 @@ body {
   .page-wrapper .title {
     font-size: 1.5rem;
     // margin-bottom: 0;
+  }
+  .blog-wrapper.blog-list-page-wrapper,
+  .page-wrapper.home-page-wrapper {
+    padding-top: 10rem;
   }
   .subtext {
     margin-top: 0;
@@ -175,8 +186,6 @@ body {
         opacity: 0.9;
       }
       .text {
-        font-size: 1.05rem;
-        opacity: 0.9;
         // padding: 0 0 0 1em;
       }
     }
@@ -192,13 +201,6 @@ body {
   // margin: 0 auto;
 
   span.date,
-  p {
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.4;
-    // font-size: 0.875rem;
-    margin: 0 0 0.5em 0;
-  }
-
   span.date {
     display: inline-block;
     opacity: 0.4;
@@ -275,14 +277,6 @@ body {
         display: block;
       }
     }
-    p {
-      font-size: 1rem;
-      font-weight: 100%;
-      opacity: 0.9;
-      line-height: 1.5;
-
-      margin-bottom: 1.5rem;
-    }
 
     .first-paragraph {
       padding-top: 2rem;
@@ -297,13 +291,38 @@ body {
 }
 
 .about-author {
-  margin-top: 4rem;
-  div {
+  margin: 4rem 0;
+  .about-author {
+    display: block;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  .author-name {
+    margin-bottom: 0;
+
+    font-size: 2rem;
+  }
+  .container {
     display: flex;
 
-    img {
-      width: 10rem;
-      border-radius: 50%;
+    .headshot {
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 10rem;
+        border-radius: 50%;
+      }
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
     }
   }
 }

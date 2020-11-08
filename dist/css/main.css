@@ -8,6 +8,7 @@ body {
   color: #e5e5e5;
   background-color: #1d2021;
   margin: 0;
+  font-size: 1rem;
   line-height: 1.6;
   /* 1 */
   font-family: "Merriweather", serif;
@@ -42,6 +43,11 @@ body a:active {
 body strong {
   font-size: 1.1rem;
 }
+body p {
+  font-family: "Merriweather", serif;
+  opacity: 0.9;
+  font-size: 1.05rem;
+}
 body .social-links {
   padding: 1em 0;
   display: flex;
@@ -69,6 +75,10 @@ body .nav-wrapper {
 }
 body .page-wrapper .title {
   font-size: 1.5rem;
+}
+body .blog-wrapper.blog-list-page-wrapper,
+body .page-wrapper.home-page-wrapper {
+  padding-top: 10rem;
 }
 body .subtext {
   margin-top: 0;
@@ -140,21 +150,12 @@ body .navbar .nav-wrapper .blog-btn a:hover {
     font-size: 1.875rem;
     opacity: 0.9;
   }
-  body .page-wrapper .text {
-    font-size: 1.05rem;
-    opacity: 0.9;
-  }
 }
 body footer {
   font-size: 0.875rem;
 }
 
 .blog-wrapper span.date,
-.blog-wrapper p {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.4;
-  margin: 0 0 0.5em 0;
-}
 .blog-wrapper span.date {
   display: inline-block;
   opacity: 0.4;
@@ -221,26 +222,41 @@ body footer {
 .blog-wrapper .content .tags .name {
   display: block;
 }
-.blog-wrapper .content p {
-  font-size: 1rem;
-  font-weight: 100%;
-  opacity: 0.9;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
 .blog-wrapper .content .first-paragraph {
   padding-top: 2rem;
 }
 
 .about-author {
-  margin-top: 4rem;
+  margin: 4rem 0;
 }
-.about-author div {
+.about-author .about-author {
+  display: block;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: 0;
+}
+.about-author .author-name {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+.about-author .container {
   display: flex;
 }
-.about-author div img {
+.about-author .container .headshot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-author .container .headshot img {
   width: 10rem;
   border-radius: 50%;
+}
+.about-author .container .details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
