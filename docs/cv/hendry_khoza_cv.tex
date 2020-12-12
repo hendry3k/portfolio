@@ -62,7 +62,7 @@
 		
 \newcommand{\EducationEntry}[4]{
 		\noindent \textbf{#1} \hfill      % Study
-		\colorbox{Black}{%
+		\colorbox{Black!90}{%
 			\parbox{6em}{%
 			\hfill\color{White}#2}} \par  % Duration
 		\noindent \textit{#3} \par        % School
@@ -76,9 +76,18 @@
 		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
 		\normalsize \par}
 
-\urlstyle{sf}
+% \urlstyle{sf}
 
-\renewcommand\UrlFont{\color{blue}\rmfamily}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\urlstyle{same}
+
 
 %%% Begin Document
 %%% ------------------------------------------------------------
@@ -99,25 +108,25 @@
 \NewPart{Personal details}{}
 
 \PersonalEntry{Birth of birth}{May 22, 1995}
-\PersonalEntry{Physical Address}{26 Frangipani St, Pretoria}
+\PersonalEntry{Physical address}{26 Frangipani St, Pretoria}
 \PersonalEntry{Phone number}{(+27) 81 249-0306}
 \PersonalEntry{Mail address}{\url{h3khoza@gmail.com}}
-\PersonalEntry{Webiste}{\url{www.hendry.xyz}}
+\PersonalEntry{Website}{\url{www.hendry.xyz}}
 
 %%% Education
 %%% ------------------------------------------------------------
 \NewPart{Education}{}
 
 \EducationEntry{Computer Systems Engineering}{2018-Present}{\href{https://www.tut.ac.za/}
-{\color{blue}Thswane University of Technology}}{I have an average pass mark of 
-75 percent including a distinction in technical programming using C++ language. I majored in mathematics and systems 
-development. I pass communication skills and writing skills with 60 percent}
+{Tshwane University of Technology}}{I have an average pass mark of 
+65 percent including a distinction in technical programming using the C++ language. I majored in mathematics and systems 
+development. I pass communication skills and writing skills with 70 percent}
 
 \sepspace
 
 \EducationEntry{Matric (Grade 12)}{2009-2013}{\href{https://sincobilesecondaryschool.co.za/}
-{\color{blue}Sincobile Secondary School}}{I was one of the top achievers 
-of my class in 2013. I got a distinction in mathematics and level 6 on life
+{Sincobile Secondary School}}{I was one of the top achievers 
+in my class. I have a distinction in mathematics and level 6 in life
 science and physical science. I participated in the school soccer 
 term and school debate.}
 
@@ -133,39 +142,58 @@ term and school debate.}
 % \sepspace
 
 \EducationEntry{Student Assistant}{2020-present}{\href{https://www.tut.ac.za/}
-  {\color{blue}Thswane University of Technology}, Full-time}
+  {Tshwane University of Technology}, Full-time}
   {My Responsibility was to assist students where they find difficulties in their
-studies, particularly on mathematics and programming. I was also responsible to
+studies, particularly in mathematics and programming. I was also responsible to
 open las where a student can come to practice.}
 \sepspace
 
 \EducationEntry{Web Developer}{2017-2018}{\href{https://www.hscom.co.za/}
-  {\color{blue}HSCOM inc}, Part-time}
+  {HSCOM inc}, Part-time}
 {I designed and developed websites for clients. I improved the existing
 clients’ websites for better results on the search engines. I was also a call
 consultant for clients who are having technical.}
 
 \pagebreak
 
+
+
+\NewPart{Projects}{}
+
+
+\begin{projects}
+	\project
+	{Simply City}{2017 - 2018}
+	{\website{https://www.simplycity.nc}{https://www.simplycity.nc} \website{https://innovation.engie.com/fr/news/actus/territoires/simply-city-lappli-qui-simplifie-la-ville-au-ces-2018-avec-engie/8156}{Présentation CES 2018} }
+	{Simply City est une application mobile, gratuite et participative destinée à tous les habitants, visiteurs et touristes qui séjournent dans une ville. L’application permet de connaître toutes les informations et services utiles en temps réel.}
+
+	{Ionic 3,Typescript,Javascript,Visual Studio Code}
+				
+	\project
+	{YAAC Another Awesome CV}{2013 - 2018}
+	{\github{darwiin/yaac-another-awesome-cv} \website{https://www.overleaf.com/latex/templates/awesome-source-cv/wrdjtkkytqcw}{Template sur Overleaf}}
+	{Template \LaTeX pour Curiculum Vitæ utilisant les icônes \href{https://fontawesome.com}{Font Awesome} et la police de caractère \href{https://fonts.google.com/specimen/Source+Sans+Pro}{Adobe Source Sans Pro}. YAAC Another Awesome CV a d'abord été créé comme un template simple pour CV à vocation technologique.}
+	{\LaTeX,Sublime Text}
+
+\end{projects}
+
+
 %%% Skills
 %%% ------------------------------------------------------------
 \NewPart{Skills}{}
 
-\SkillsEntry{Programming:}{C/C++, Java, PHP, C\#, Pyhton, PL/SQL}
-\SkillsEntry{Web Development:}{HTML, CSS/CSS3, Javascript}
-\SkillsEntry{DBMS:}{MySQL, Oracle, Microsoft SQL Server}
-\SkillsEntry{OS Proficiency:}{Linux \(Debian, Red Hat\), Windows, Mac}
-
-
-%%% Strength
-%%% ------------------------------------------------------------
-\NewPart{Strengths}{}
-
-\StrengthEntry{Oral and Written Communication}{}
-\StrengthEntry{Reliable and Consistent}{}
-\StrengthEntry{Committed to Lifelong Learning}{}
-\StrengthEntry{Team Building}{}
-
+\SkillsEntry{Programming}{C \& C++, Python, Java, Go}
+% \SkillsEntry{}{}
+\SkillsEntry{Web Development}{HTML5, CSS3, JavaScript, React}
+% \SkillsEntry{}{}
+\SkillsEntry{DBMS}{MySQL, Oracle, MongosDB}
+% \SkillsEntry{}{}
+\SkillsEntry{Software}{\textsc{Android Studio}, \LaTeX, \textsc{Linux}}
+% \SkillsEntry{}{}
+\SkillsEntry{Strengths}{Oral and Written Communication}
+\SkillsEntry{}{Reliable and Consistent}
+\SkillsEntry{}{Committed to Lifelong Learning}
+\SkillsEntry{}{Team Building}
 
 
 %%% Hobbies
@@ -174,6 +202,7 @@ consultant for clients who are having technical.}
 
 \SkillsEntry{Hobbies}{Fictional Science Books / Movies }
 \SkillsEntry{}{Exercise (Gym)}
+\SkillsEntry{}{Sports}
 
 
 %%% References
