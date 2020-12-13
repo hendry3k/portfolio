@@ -3,15 +3,13 @@ title: "Hendry Khoza"
 ---  
 
 
-## Who really is Hendry Khoza?
-
-In a nutshell, Hendry Khoza is a [computer engineering](https://en.wikipedia.org/wiki/Computer_engineering) student at 
-[Tshwane University of Technology](https://www.tut.ac.za/). One of the reason that made me choose 
-this field of study is the opportunities that technology present to us to 
-improve our daily lives. For instance, I recently switched to using [Ubuntu](https://ubuntu.com/)
-and I managed to automate some repetitive task on my work-flow and it made me
-productive and encouraged me to contribute to [open-source](https://en.wikipedia.org/wiki/Open_source).
-
+Welcome to my personal website. I'm a software engineer who is studying 
+computer system Engineering at Thswane University of Technology. Over the past
+3 years I have helped bussiness to build their software, help them to reach
+millions of customers online. I have attendant many hackhons, I enjoy working
+with a team to build software that solve human problems. I have met a amazing
+software developers through hackhons and I believe when technology used right
+it can reduce most of our problems, such as diesease and poverty.
 
 ## Portfolio, Including some projects I'm currently working on.
 It has been proven multiple times in the tech industry that schools can not
