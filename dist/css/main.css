@@ -8,7 +8,6 @@ body {
   color: #e5e5e5;
   background-color: #1d2021;
   margin: 0;
-  font-size: 1rem;
   line-height: 1.6;
   /* 1 */
   font-family: "Merriweather", serif;
@@ -52,6 +51,9 @@ body .social-links {
   padding: 1em 0;
   display: flex;
 }
+body .social-links .linkin {
+  display: none;
+}
 body .social-links > :not(:last-child) {
   margin-right: 1em;
 }
@@ -85,10 +87,6 @@ body .subtext {
   display: block;
   font-size: 0.875rem;
   transform: translateY(-1rem);
-}
-body .page-wrapper .text {
-  padding: 0 0 0 0.5em;
-  font-size: 1rem;
 }
 body .navbar {
   border-top: 2px solid #9d0006;
@@ -142,6 +140,12 @@ body .navbar .nav-wrapper .blog-btn a:hover {
 @media only screen and (min-width: 36.25rem) {
   body hr {
     margin-top: 5rem;
+  }
+  body .social-links .linkin {
+    display: inline-block;
+  }
+  body .social-links .linkin svg {
+    transform: translateY(20%);
   }
   body .navbar .nav-wrapper .logo {
     font-size: 1.5rem;

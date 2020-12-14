@@ -14,7 +14,7 @@ body {
   color: $fg-color;
   background-color: $bg-color;
   margin: 0;
-  font-size: 1rem;
+  // font-size: 1rem;
   line-height: 1.6; /* 1 */
   font-family: "Merriweather", serif;
 
@@ -64,6 +64,10 @@ body {
     padding: 1em 0;
     display: flex;
 
+    .linkin {
+      display: none;
+    }
+
     & > :not(:last-child) {
       margin-right: 1em;
     }
@@ -104,10 +108,6 @@ body {
     display: block;
     font-size: 0.875rem;
     transform: translateY(-1rem);
-  }
-  .page-wrapper .text {
-    padding: 0 0 0 0.5em;
-    font-size: 1rem;
   }
 
   .navbar {
@@ -170,6 +170,13 @@ body {
   @media only screen and (min-width: 36.25rem) {
     hr {
       margin-top: 5rem;
+    }
+
+  .social-links .linkin {
+          svg {
+                  transform: translateY(20%)
+          }
+      display: inline-block;
     }
 
     .navbar {
@@ -309,7 +316,6 @@ body {
 
     .first-paragraph {
       padding-top: 2rem;
-      // background-color: red;
     }
 
     // .first-paragraph::first-letter {
@@ -337,7 +343,6 @@ body {
     // display: flex;
 
     .headshot {
-      // background-color: red;
       margin-top: 1rem;
       display: flex;
       flex-direction: column;

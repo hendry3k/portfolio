@@ -4,12 +4,11 @@ title: "Hendry Khoza"
 
 
 Welcome to my personal website. I'm a software engineer who is studying 
-computer system Engineering at Thswane University of Technology. Over the past
-3 years I have helped bussiness to build their software, help them to reach
-millions of customers online. I have attendant many hackhons, I enjoy working
-with a team to build software that solve human problems. I have met a amazing
-software developers through hackhons and I believe when technology used right
-it can reduce most of our problems, such as diesease and poverty.
+computer system Engineering at Tshwane University of Technology. Over the past
+3 years I helped businesses to build their software, help them to reach
+millions of customers online. I have attendant many hackathons, I enjoy working
+with a team to build software that solves human problems. I have met amazing software developers through hackathons and I believe when technology used right
+it can reduce most of our problems, such as disease and poverty.
 
 ## Portfolio, Including some projects I'm currently working on.
 It has been proven multiple times in the tech industry that schools can not

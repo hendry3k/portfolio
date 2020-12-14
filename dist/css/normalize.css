@@ -7,10 +7,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
-}
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
 
 html {
   line-height: 1.15; /* 1 */
@@ -178,7 +176,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -188,7 +187,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
