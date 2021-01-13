@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Thanks : Rishi Shah 's Contribution
+% inspired by his awesome contribution:
+% https://www.overleaf.com/articles/rishi-shahs-resume/vgxvkmxktyxn
+% Author : Allianzcortex
+% contact me : github.com/Allianzcortex
+% email : iamwanghz#gmail.com
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.40in,top=0.3in,right=0.75in,bottom=0.1in]{geometry} % Document margins
+\usepackage{fontawesome}
+\usepackage{times}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Hendry Khoza} % Your name 
+
+
+% \usepackage[hidelinks]{hyperref}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\urlstyle{same}
+
+
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}           % Vertical space macro
+
+\newcommand{\EducationEntry}[4]{
+        \noindent \textbf{#1} \hfill \textit{#2} \\     % Study
+        \noindent \textit{#3} \\        % School
+        \noindent  #4  % Description
+        \normalsize \par}
+
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+        \noindent \textbf{#1} \hfill \textit{#2} \\      % Jobname
+        \noindent \textit{#3} \\              % Company
+        \noindent\hangindent=2em\hangafter=0  #4 % Description
+        \normalsize \par}
+
+
+\newcommand{\ProjectsEntry}[8]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill \\     % Jobname
+    \noindent \textit{#2} | \textit{#3} \\              % Company
+    \noindent\hangindent=2em\hangafter=0  #4 \\ % Description
+    \noindent \small #5 | #6 | #7 | #8              % Company
+		\normalsize \par}
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+    \textit{\textbf{#1}}}			   % Entry name (birth, address, etc.)
+		\hspace{1em} #2 \par}    % Entry value	
+
+
+\address{\faGithub{ \url{www.github.com/hendry3k} } \faLink{ \url{www.hendry.xyz} } \faEnvelope{ \url{h3khoza@gmail.com}}}
+\address{\faMapMarker{ 26 Frangipani St, Pretoria } \faPhone{ (+27) 81-249-0306}} % Your address
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Objective}
+{Computer Engineer with programming experience in web development, seeking 12 months internship  for software development roles.}
+\end{rSection}
+
+% \sepspace
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+        \EducationEntry{Computer Systems Engineering}{2018-Present}
+        {\href{https://www.tut.ac.za/} {Tshwane University of Technology}}
+        {I have an average pass mark of 65 percent including a distinction in technical programming using the C++ language. I majored in mathematics and systems  development. I pass communication skills and writing skills with 70 percent}
+        % \sepspace
+
+        \EducationEntry{Matric (Grade 12)}{2009-2013}
+        {\href{https://sincobilesecondaryschool.co.za/}{Sincobile Secondary School}}
+        {I was one of the top achievers in my class. I have a distinction in mathematics and level 6 in life science and physical science. I participated in the school soccer term and school debate.}
+        % \sepspace
+\end{rSection}
+
+% \sepspace
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+        \ProjectsEntry{Radserve (A website for a client)}
+        {\faGithub{ \url{https://github.com/hendry3k} } }{\faLink{ \url{https://www.radserve.co.za} }}
+        {I developed this website for a client that was looking to make sure that his business is available online. The website is well designed and responsive, also contains a working contact form using Formspree API}
+        {\{JavaScript}{React}{CSS-in-JS}{HTML\}}
+        % \sepspace
+   
+        \ProjectsEntry{Safe System using shape recognition}
+        {\faGithub{ \url{https://github.com/hendry3k} } }{}
+        {The system uses shape recognition as a second method of authentication to gain access to the system. A random shape is generated and sent to the user, the user must scan the sent shape to gain access to the system.}
+        {\{Python}{OpenCV}{Raspberry Pi}{Tkinter\}}
+        % \sepspace
+
+        \ProjectsEntry{Online Cellphone store}
+        {\faGithub{ \url{https://github.com/hendry3k/cell-phone-store} } }{\faLink{ \url{https://cell-phone-store.netlify.app/} }}
+        { An e-commerce website that sells second-hand cellphone. The website is built with react and the data is provided on the fly with react context API}
+        {\{JavaScript}{React}{CSS}{HTML\}}
+        % \sepspace
+           
+        \ProjectsEntry{Bankist (Minimalist Marketing Website)}
+        {\faGithub{ \url{https://github.com/hendry3k/bankist} } }{\faLink{ \url{https://hendry.xyz/bankist/} }}
+        {A one-page marketing website for a fictional bank. The website has modern features such as auto-scroll to section, Lazy loading Images, carousel or slider, and more.  All the features are built from scratch.}
+        {\{JavaScript}{HTML}{CSS}{\}}
+        % \sepspace
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+        \WorkEntry{Student Assistant}{2020-2021}
+        {\href{https://www.tut.ac.za/} {Tshwane University of Technology}, Full-time}
+        {My Responsibility was to assist students where they find difficulties in their studies, particularly in mathematics and programming. I was also responsible to open las where a student can come to practice.}
+        % \sepspace
+
+        \WorkEntry{Web Developer}{2017-2018}
+        {\href{https://www.hscom.co.za/} {HSCOM inc}, Part-time}
+        {I designed and developed websites for clients. I improved the existing clients’ websites for better results on the search engines. I was also a call consultant for clients who are having technical.}
+
+        % \EducationEntry{Participate of MTN Bussiness App of the year}{Sept... - 2020}
+        % {\href{https://www.appoftheyear.co.za/} {\color{blue}MTN App of the Year}, Full-time}
+        % {I was responsible to assist students where they find difficulties in their studies. I also helped to maintain labs where students can practice and do their assignments}
+        % % \sepspace
+
+\end{rSection}
+
+\pagebreak
+
+%--------------------------------------------------------------------------------
+%     Technical Skills
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Technical Skills}
+
+
+
+\SkillsEntry{Programming}{  Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018 \& C++, Python, Java, Go}
+% \SkillsEntry{}{}
+\SkillsEntry{Web Development}{HTML5, CSS3, JavaScript, React}
+% \SkillsEntry{}{}
+\SkillsEntry{DBMS}{MySQL, Oracle, MongosDB}
+% \SkillsEntry{}{}
+\SkillsEntry{Software}{\textsc{Android Studio}, \LaTeX, \textsc{Linux}}
+% \SkillsEntry{}{}
+\SkillsEntry{Strengths}{Oral and Written Communication}
+\SkillsEntry{}{Reliable and Consistent}
+\SkillsEntry{}{Committed to Lifelong Learning}
+\SkillsEntry{}{Team Building}
+
+
+        \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+        Programming: \ & aaa,bbb,ccc,ddd,eee,fff,ggg,hhh \\
+        Software \& Tools: & {\textbf{Backend: }}qqqq,wwww,eeee,rrrr,tttt,yyyy,uuuu,iiii\\
+        & {\textbf{FrontEnd: }}aaaaa,bbbbb,eeee,cccc\\
+        & {\textbf{Others: }}uuuu,uyyy,oooo,aaaa,vvv,eeee
+        \end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+{\bf Work Station1,Strange Place } \hfill {\em May 2002 - June 2004} 
+{\textit{Backend Developer}}\\
+- Someone I know recently combined Maple Syrup  buttered Popcorn thinking it would taste like caramel popcorn. It didn’t and they don’t recommend anyone else do it either.
+\\- Should we start class now, or should we wait for everyone to get here.Lets all be unique together until we realise we are all the same.
+
+{\bf Work Station2,Strange Place2} \hfill {\em June 2005 - April 2008} 
+\\{\textit{Full-Stack Engineer}}
+\\- Someone I know recently combined Maple Syrup buttered Popcorn thinking it would taste like caramel popcorn. It didn’t and they don’t recommend anyone else do it either.
+\\- Should we start class now, or should we wait for everyone to get here.Lets all be unique together until we realise we are all the same.
+
+% \\- xx
+% \\- xx
+% there should be more lines
+
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\begin{rSection}{Award}
+- First Prize\\
+- Second Prize\\
+- Third Prize\\
+\end{rSection}
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Academic Achievements} 
+ Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018
+\item Won First Prize in Model Making Competition Organized by Symbiosis Institute of Technology, Pune.
+\end{rSection}
+
+% \newpage
+
+%----------------------------------------------------------------------------------------
+% Extra Curricular
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+\item Co-Organized “ Nirmitee 2017” - a National Symposium of Civil Department of MIT, Pune
+\item Attended a workshop on Autodesk Revit at IIT Bombay in 2014.
+\item Winner of Inter Departmental Football Competition 2015.
+\item Member of the  Rotaract Club Of Pune Pride from 2014 to 2017.
+\item Worked for a start-up company Named OUST as a Regional Marketing Manager
+\item Trained and disciplined in National Cadet Corps (NCC), IIT Kanpur for a year.
+ \item  Participated in Vijyoshi Camp 2012 organized at Indian Institute of Science, Bangalore.
+ \item Won 2nd position in Kho-Kho in Intramurals conducted by Physical Education Section, IIT Kanpur.
+ \item Pursued French as second language during secondary school from Grade 6 to Grade 10. Also participated in French Song Competition and French G.K. Quiz in Class 10th. %
+
+\end{rSection}
+
+\begin{rSection}{Personal Traits}
+\item Highly motivated and eager to learn new things.
+\item Strong motivational and leadership skills.
+\item Ability to work as an individual as well as in group.
+\end{rSection}
+\end{document}
