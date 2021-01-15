@@ -8,7 +8,20 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+  font-family: 'Merriweather';
+  src:  url('../fonts/Merriweather-Regular.ttf') format('ttf');
+        /* url('../fonts/Merriweather-Italic.ttf') format('woff'); */
+}
+
+@font-face {
+  font-family: 'Lora';
+  src:  url('../fonts/Lora-Bold.ttf') format('ttf');
+  src:  url('../fonts/Lora-VariableFont_wght.ttf') format('ttf');
+        /* url('../fonts/Merriweather-Italic.ttf') format('woff'); */
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"); */
 
 html {
   line-height: 1.15; /* 1 */
