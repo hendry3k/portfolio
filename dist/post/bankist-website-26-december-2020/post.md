@@ -1,12 +1,12 @@
 After a while I final finish building one project from the complete JavaScript 
 course. I have to celebrate this to encourage myself to also finish the rest of
 the projects I set myself to finish in the next 3 months. Since Jonas updated
-the javascript course I decided to brash up my level of understanding of the
-javaScript language.
+the JavaScript course I decided to brash up my level of understanding of the
+JavaScript language.
 
-Over the pass since I have learn javascript a lot has change about me. I 
-discovert Linux and was so hook on thir way of thinking, more specific to the
-POSIX felosophy and I borrow ppart of the suckless phelosyphy. I have became 
+Over the pass since I have learn JavaScript a lot has change about me. I 
+discovered Linux and was so hook on thir way of thinking, more specific to the
+POSIX fjelosophy and I borrow poin of the suckless phelosyphy. I have became 
 picky when I choose programming language. I dedicate my time to lean C and Go
 grograming but still I needed to complete what I started and I don't think
 javaScript is that bad as long used on the browse.
@@ -39,7 +39,8 @@ here is fuction>
 
 ## Tab view layout
 
-## Lazzy loading Images
+## へllloahasはssa loading Images
+:
 
 ## Aninmate each section on entry
 
