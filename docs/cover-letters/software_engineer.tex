@@ -1,0 +1,124 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'oldstyle
+\moderncvcolor{blue}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% \renewcommand{\familydefault}{\fourier}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% \usepackage[ulrcolor=cyan]{hyperref}
+
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     filecolor=magenta,      
+%     urlcolor=cyan,
+% }
+
+% \urlstyle{same}
+
+
+% adjust the page margins
+% \usepackage[scale=0.75]{geometry}
+\usepackage[top=2.5em, right=5em, bottom=1em, left=5em]{geometry}
+
+% personal data
+\name{Hendry}{Khoza}
+% \signature{Khoza SH}
+\title{Software Engineer ERP AWS}                               % optional, remove / comment the line if not wanted
+\address{26 Frangipani St}{Pretoria}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+27 81-249-0306}                   % optional, remove / comment the line if not wanted
+\email{h3khoza@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.hendry.xyz}                         % optional, remove / comment the line if not wanted
+
+\begin{document}
+
+\recipient{082 Vodacom Boulevard} {Midrand \\ 1685 \\ South Africa}
+\date{\today}
+
+\makeatletter
+\renewcommand*{\makeletterclosing}{
+  \@closing\\% <===================================================
+  {\bfseries\@firstname~\@lastname}%
+  \ifthenelse{\isundefined{\@enclosure}}{}{%
+    \\%
+    \vfil%
+    {\color{color2}\itshape\enclname: \@enclosure}}%
+    \vfil}
+\makeatother
+
+
+\opening{Dear Hiring team}
+
+\closing{Yours sincerely,}
+% \enclosure[Adjunto]{CV}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+
+\makelettertitle
+
+When I say I am a Software Engineer is more than a job title. What I do matters
+I do not just write code, I build software that changes people's lives and that
+is a huge responsibility. If you think for a minute about the peoples who use
+the software I build... They put trust in me.
+
+When I was at university I excel
+academically, especially in technical programming. after school, I continue to
+take online classes on the topic such as data structure and system design to
+improve my skills. I am dedicated to learning more when given a chance.
+Quality of software is the heart of every line of code that I write. I always
+write software that: 
+\begin{itemize}
+  \item works - The program does the task that is design to do
+  \item can be modified - I make sure that my code is easy to read, understand or change
+  \item reusable - I apply object-oriented design so that it will be easy to use part of the program to another program 
+\end{itemize}
+
+When I was at university I took multiple Udemy courses to supplement my school
+with React, Express brings joy to me.
+I am good at programming, I didn't limit myself to one programing language that 
+was thought in my class which is c++,  I took extra time to learn multiple 
+programming languages such as Python, Go, and typescript. Now I am in the process of
+learning rust. I have a good grasp of working with modern tools such as Git and
+cloud computing. My favorite tool is the bash scripting language because it
+allows me to automate a lot of my work
+
+
+I have been using Vodacom ever since my first phone and I really enjoy how
+reliable it is even in rural areas. My favourite service from Vodacom was
+Vodacom Millionaires. I used to play it every week,  every Vodacom customer
+used to get two free entries to play.  I've won airtime multiple times from
+Vodacom Millionaire.
+I know that with the opportunity to fully invest myself in this career I would
+be able to become a great software developer in your team.
+
+I have been using Vodacom ever since my first phone and I really enjoy how
+reliable it is even in rural areas. My favourite service from Vodacom was
+Vodacom Millionaires. I used to play it every week,  every Vodacom customer
+used to get two free entries to play.  I've won airtime multiple times from
+Vodacom Millionaire.
+I know that with the opportunity to fully invest myself in this career I would
+be able to become a great software developer in your team.
+
+
+I have been using Vodacom ever since my first phone and I really enjoy how
+reliable it is even in rural areas. My favourite service from Vodacom was
+Vodacom Millionaires. I used to play it every week,  every Vodacom customer
+used to get two free entries to play.  I've won airtime multiple times from
+Vodacom Millionaire.
+I know that with the opportunity to fully invest myself in this career I would
+be able to become a great software developer in your team.
+
+
+
+
+
+
+\makeletterclosing
+
+\end{document}
+
