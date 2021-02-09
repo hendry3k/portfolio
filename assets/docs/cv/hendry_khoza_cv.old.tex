@@ -1,0 +1,230 @@
+\documentclass[papei=a4,fontsize=12pt]{scrartcl} % KOMA-article class
+							
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage[T1]{fontenc} 
+
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+% \usepackage{geometry}
+\usepackage[left=2cm,right=2cm,top=1.5cm,bottom=0.5cm]{geometry}
+\textheight=700px                    % Saving trees ;-)
+
+  \usepackage[hidelinks]{hyperref}
+
+\frenchspacing              % Better looking spacings after periods
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%			            % Change font of \section command
+ \LARGE  \usefont{T1}{qpl}{b}{sit}%		% bch-b-n: CharterBT-Bold font
+	% \usefont{OT1}{qbl}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{2pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		% \usefont{OT1}{phv}{b}{n} 
+\Huge \usefont{T1}{qpl}{b}{sit} \hfill {#1} %		% bch-b-n: CharterBT-Bold font
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+    \newcommand{\NewPart}[1]{\section*{#1}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+    \textit{\textbf{#1}}}			   % Entry name (birth, address, etc.)
+		\hspace{1em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+    \textit{\textbf{#1}}}			   % Entry name (birth, address, etc.)
+		\hspace{1em} #2 \par}    % Entry value	
+
+
+\newcommand{\StrengthEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+    \parbox{18em}{        % Box to align text
+    \textit{\textbf{#1}}}			   % Entry name (birth, address, etc.)
+		\hspace{1em} #2 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{Black!50}{%
+			\parbox{6em}{%
+			\hfill\color{White}#2}} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill      % Jobname
+		\colorbox{Black!50}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par              % Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+
+\newcommand{\ProjectsEntry}[8]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill \par     % Jobname
+    \noindent \textit{#2} | \textit{#3} \par              % Company
+    \noindent\hangindent=2em\hangafter=0 \small #4 \par % Description
+    \noindent \small #5 | #6 | #7 | #8 \par              % Company
+		\normalsize \par}
+
+
+% \urlstyle{sf}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\urlstyle{same}
+
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{Hendry Khoza}
+\MySlogan{Curriculum Vitae}
+
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+
+\PersonalEntry{Birth of birth}{May 22, 1995}
+\PersonalEntry{Physical address}{26 Frangipani St, Pretoria}
+\PersonalEntry{Phone number}{(+27) 81 249-0306}
+\PersonalEntry{Mail address}{\url{h3khoza@gmail.com}}
+\PersonalEntry{Website}{\url{www.hendry.xyz}}
+\PersonalEntry{Github}{\url{www.github.com/hendry3k}}
+
+\sepspace
+
+
+
+%%% Porject List
+%%% ------------------------------------------------------------
+\NewPart{Projects}
+
+\ProjectsEntry{Radserve (A website for a client)}
+{Github: \href{https://github.com/hendry3k}{https://github.com/hendry3k} }{Live: \href{https://www.radserve.co.za}{https://www.radserve.co.za} }
+{I developed this website for a client that was looking to make sure that his business is available online. The website is well designed and responsive, also contains a working contact form using Formspree API}
+{JavaScript}{React}{CSS-in-JS}{HTML}
+\sepspace
+   
+\ProjectsEntry{Safe System using shape recognition}
+{Github: \href{https://github.com/hendry3k/safe-system}{https://github.com/hendry3k/safe-system}}{}
+{The system uses shape recognition as a second method of authentication to gain access to the system. A random shape is generated and sent to the user, the user must scan the sent shape to gain access to the system.}
+{Python}{OpenCV}{Raspberry Pi}{Tkinter}
+\sepspace
+
+% \ProjectsEntry{Online Cellphone store}
+% {Github: \href{https://github.com/hendry3k/cell-phone-store}{https://github.com/hendry3k/cell-phone-store} }{Live: \href{https://cell-phone-store.netlify.app/}{https://cell-phone-store.netlify.app/}}
+% { An e-commerce website that sells second-hand cellphone. The website is built with react and the data is provided on the fly with react context API}
+% {JavaScript}{React}{CSS}{HTML}
+% \sepspace
+   
+\ProjectsEntry{Bankist (Minimalist Marketing Website)}
+{Github: \href{https://github.com/hendry3k/bankist}{https://github.com/hendry3k/bankist}}{Live: \href{https://hendry.xyz/bankist/}{https://hendry.xyz/bankist/} }
+{A one-page marketing website for a fictional bank. The website has modern features such as auto-scroll to section, Lazy loading Images, carousel or slider, and more.  All the features are built from scratch.}
+{JavaScript}{HTML}{CSS}{}
+\sepspace
+  
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\EducationEntry{Computer Systems Engineering}{2018-Present}{\href{https://www.tut.ac.za/}
+{Tshwane University of Technology}}{I have an average pass mark of 
+65 percent including a distinction in technical programming using the C++ language. I majored in mathematics and systems 
+development. I pass communication skills and writing skills with 70 percent}
+\sepspace
+
+\pagebreak
+
+\EducationEntry{Matric (Grade 12)}{2009-2013}
+{\href{https://sincobilesecondaryschool.co.za/}{Sincobile Secondary School}}
+{I was one of the top achievers in my class. I have a distinction in mathematics and level 6 in life science and physical science. I participated in the school soccer term and school debate.}
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Work experience}{}
+
+
+% \EducationEntry{Participate of MTN Bussiness App of the year}{Sept... - 2020}
+% {\href{https://www.appoftheyear.co.za/} {\color{blue}MTN App of the Year}, Full-time}
+%   {I was responsible to assist students where they find difficulties in their studies. I also helped to maintain labs where students can practice and do their assignments}
+% \sepspace
+
+\EducationEntry{Student Assistant}{2020-2021}
+{\href{https://www.tut.ac.za/} {Tshwane University of Technology}, Full-time}
+{My Responsibility was to assist students where they find difficulties in their studies, particularly in mathematics and programming. I was also responsible to open las where a student can come to practice.}
+\sepspace
+
+\EducationEntry{Web Developer}{2017-2018}
+{\href{https://www.hscom.co.za/} {HSCOM inc}, Part-time}
+{I designed and developed websites for clients. I improved the existing clients’ websites for better results on the search engines. I was also a call consultant for clients who are having technical.}
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+
+\SkillsEntry{Programming}{C \& C++, Python, Java, Go}
+% \SkillsEntry{}{}
+\SkillsEntry{Web Development}{HTML5, CSS3, JavaScript, React}
+% \SkillsEntry{}{}
+\SkillsEntry{DBMS}{MySQL, Oracle, MongosDB}
+% \SkillsEntry{}{}
+\SkillsEntry{Software}{\textsc{Android Studio}, \LaTeX, \textsc{Linux}}
+% \SkillsEntry{}{}
+\SkillsEntry{Strengths}{Oral and Written Communication}
+\SkillsEntry{}{Reliable and Consistent}
+\SkillsEntry{}{Committed to Lifelong Learning}
+\SkillsEntry{}{Team Building}
+
+
+%%% Hobbies
+%%% ------------------------------------------------------------
+\NewPart{Hobbies}{}
+
+\SkillsEntry{Hobbies}{Fictional Science Books / Movies }
+\SkillsEntry{}{Exercise (Gym)}
+\SkillsEntry{}{Sports}
+
+
+%%% References
+%%% ------------------------------------------------------------
+\NewPart{References}{}
+
+\SkillsEntry{Miss M Mashilo}{Academic Excellence Coordinator at TUT}
+\SkillsEntry{}{012 382 9840\\}
+\SkillsEntry{Jeannot Munganga}{Junior Developer at S-Squared}
+\SkillsEntry{}{012 382 9840}
+
+\end{document}
