@@ -19,7 +19,7 @@ social:
     url: https://www.linkedin.com/in/hendry-khoza-83a3a318a/
   - icon: download
     iconPack: fas
-    url: /docs/resume.pdf
+    url: //localhost:1313/documents/letter/main.pdf
 
 weight: 1
 widget:

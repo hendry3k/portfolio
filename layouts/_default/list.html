@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <article class="mx-6 my-8">
-    <h1 class="font-bold text-3xl text-primary-text"> Recent Blog  {{ .Title }}</h1>
+    <h1 class="font-bold text-3xl text-primary-text">{{ .Title }}</h1>
     {{ with .Content }}
     <div class="content">
         {{ . }}
