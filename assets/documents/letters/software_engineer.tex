@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'oldstyle
+\moderncvcolor{blue}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% \renewcommand{\familydefault}{\fourier}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% \usepackage[ulrcolor=cyan]{hyperref}
+
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     filecolor=magenta,      
+%     urlcolor=cyan,
+% }
+
+% \urlstyle{same}
+
+
+% adjust the page margins
+% \usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.75, top=6em, right=5em, bottom=1em, left=5em]{geometry}
+
+% personal data
+\name{Hendry}{Khoza}
+% \signature{Khoza SH}
+\title{Software Engineer ERP AWS}                               % optional, remove / comment the line if not wanted
+\address{26 Frangipani St}{Pretoria}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+27 81-249-0306}                   % optional, remove / comment the line if not wanted
+\email{h3khoza@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.hendry.xyz}                         % optional, remove / comment the line if not wanted
+
+\begin{document}
+
+\recipient{082 Vodacom Boulevard} {Midrand \\ 1685 \\ South Africa}
+\date{\today}
+
+\makeatletter
+\renewcommand*{\makeletterclosing}{
+  \@closing\\% <===================================================
+  {\bfseries\@firstname~\@lastname}%
+  \ifthenelse{\isundefined{\@enclosure}}{}{%
+    \\%
+    \vfil%
+    {\color{color2}\itshape\enclname: \@enclosure}}%
+    \vfil}
+\makeatother
+
+
+\opening{Dear Hiring team}
+
+\closing{Yours sincerely,}
+% \enclosure[Adjunto]{CV}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+
+\makelettertitle
+
+This letter is to express my interest in the Software Engineering position with
+Vodacom. With all my skills and experience, I know I will be a valuable member
+of your team
+
+I am a young, highly motivated Software Engineer based in the Gauteng province
+
+with a strong ability to create highly-detailed, Quality software while being
+consistent with engineering principles. I have studied Computer System
+Engineering at the Tshwane University of Technology, and I have a strong
+knowledge of what users enjoy when interacting with the software. In my years
+of developing software, I have maintained a reputation for being extremely
+efficient and professional. I am fluent in web development, notably NodeJS and
+ReactJS. I have had experience in developing websites, web applications, mobile
+applications. in addition to web development, I also have experience in cloud
+computing as AWS
+
+I am currently a freelancer, Developing software for clients. The number of
+clients I receive keep growing, while the feedback I get is overwhelmingly
+positive. I have developed an online store for a client who producer music to
+sell beats. With beat store's target audience being young people, I developed
+the website to be responsive, and accessible via mobiles phone. I am familiar
+with making a tight deadline, because of this, my client appreciates working
+with me.  In my free time, I enjoy building side project and learning a new
+programming language
+
+When I say I am a Software Engineer is more than a job title. What I do matters
+I do not just write code, I build software that changes people's lives and that
+is a huge responsibility. If you think for a minute about the peoples who use
+the software I build... They put trust in me.
+Quality of software is the heart of every line of code that I write. I always
+write software that: 
+\begin{itemize}
+  \item works - The program does the task that is design to do
+  \item can be modified - I make sure that my code is easy to read, understand or change
+  \item reusable - I apply object-oriented design so that it will be easy to use part of the program to another program 
+\end{itemize}
+
+With Vodacom being one of the most exciting network companies in South Africa
+right now, I have a strong desire to contribute my skills and more to ensure
+that Vodacom is visually on top of its game. I am hungry for a challenge, and I
+believe Vodacom is the perfect place for me to grow even more as a Software
+Engineer and put my arsenal of skills to its proper use.
+
+Thank you for considering me for the Software Engineer position within your
+company. I look forward to meeting you. Please do not hesitate to contact me if
+you have any questions.
+
+
+\makeletterclosing
+
+\end{document}
+

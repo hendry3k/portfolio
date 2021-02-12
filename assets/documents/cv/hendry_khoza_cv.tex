@@ -1,0 +1,196 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.40in,top=0.2in,right=0.75in,bottom=0.1in]{geometry} % Document margins
+\usepackage{fontawesome}
+
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\usepackage{blindtext}
+
+\usepackage{times}
+% \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+% \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Hendry Khoza} % Your name 
+
+
+% \usepackage[hidelinks]{hyperref}
+\usepackage{multicol}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\urlstyle{same}
+
+
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}           % Vertical space macro
+
+\newcommand{\ReferencesEntry}[4]{      % Same as \PersonalEntry
+		\parbox{\spacebox}{        % Box to align text
+    \textbf{#1}} \\			   % Entry name (birth, address, etc.)
+    \textit{#2} \\
+    \hspace{1em} \faEnvelope{ #3} \\
+    \hspace{1em}  \faPhone{ #4} \\ }    % Entry value	
+
+
+\address{\faGithub{ \url{www.github.com/hendry3k} } \faLink{ \url{www.hendry.xyz} } \faEnvelope{ \url{h3khoza@gmail.com}}}
+\address{\faMapMarker{ 26 Frangipani St, Pretoria } \faPhone{ (+27) 81-249-0306}} % Your address
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+        \textbf{National Diploma}, Computer Systems Engineering, Expected 12/2021 \\
+        \textbf{Tshwane University of Technology} - Pretoria, Soshanguve
+        \begin{itemize}[noitemsep,topsep=-6pt]
+          \item Passed C++ programming with distinction
+          \item Took Applied Mathematics modules
+          % \item Built projects on Digital Process Control and Logic Design
+        \end{itemize}
+
+        \sepspace
+
+        \textbf{High School Diploma}, 2013\\
+        \textbf{Sincobile Secondary School} - Nkomazi, Mpumalanga
+        \begin{itemize}[noitemsep,topsep=-6pt]
+          % \item Graduated in Top 10\% of Class
+          \item Majored in Mathematics and Physical Science
+          \item Awarded Best Mathematics Learner
+        \end{itemize}
+
+    
+    
+\end{rSection}
+
+% \sepspace
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+
+        \textbf{Music Web Application} \\
+        \textit{\faGithub{ \url{https://github.com/hendry3k/magibela-website} } | \faLink{ \url{https://magibela.netlify.app/} } }
+        \begin{itemize}[noitemsep,topsep=-6pt]
+          \item Plays preview of the top songs from Spotify using REST API
+          \item Responsive to mobile devices, accomplished by bootstrap and JQuery
+          \item A working Contact Us form, powered by Formspree API
+        \end{itemize}
+        \{ TypeScript | JQuery | CSS | HTML\}
+
+        \textbf{Online Cellphone Store} \\
+        \textit{\faGithub{ \url{https://github.com/hendry3k/cell-phone-store} } | \faLink{ \url{https://cell-phone-store.netlify.app/} } }
+        \begin{itemize}[noitemsep,topsep=-6pt]
+          \item Uses Context API from React to manage the state of the web application
+          \item Retrieve The website data from a JSON file
+          \item Responsive to Mobile devices, accomplished using CSS grid
+        \end{itemize}
+        \{ JavaScript | React | CSS-in-JS | HTML\}
+
+        % \textbf{Bankist (Marketing Website)} \\
+        % \textit{\faGithub{ \url{https://github.com/hendry3k/bankist} } | \faLink{ \url{https://hendry.xyz/bankist/}  } }
+        % \begin{itemize}[noitemsep,topsep=-6pt]
+        %   \item The website lazy load images to improve speed using intersection observer API from JavaScript
+        %   \item When you click on the nav link, The website automatically scroll to the section that you click
+        %   \item The website has a tap view and image slider layout built from scratch
+        % \end{itemize}
+        % \{ JavaScript | GitPages | Git | HTML\}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+
+        \textbf{Student Assistant}, 02/2020 to 12/2020 \\
+        \textbf{Tshwane University of Technology} - Pretoria, Soshanguve
+        \begin{itemize}[noitemsep,topsep=-6pt]
+          \item  Oversaw students in classroom and common areas to monitor, enforce rules and support lead teacher.
+          \item  Tutored struggling students individually and in small groups to reinforce learning concepts.
+          \item  Assisted teachers with classroom management and to maintain positive learning environment. 
+        \end{itemize}
+
+        % \sepspace
+
+        % only uncomment if I think will be needed
+        % \textbf{Web Developer}, 04/2017 to 02/2018 \\
+        % \textbf{HSCOM inc} - Johannesburg, Gauteng
+        % \begin{itemize}[noitemsep,topsep=-6pt]
+        %   \item  Conducted testing and review of website design for responsiveness, clarity and effectiveness.
+        %   \item  Coded websites using HTML, CSS, JavaScript and jQuery languages.
+        %   \item  Collaborated with marketing department to determine organizational need and design pages to meet goals.
+        % \end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Highlight}
+        \begin{multicols}{3}
+        \begin{itemize}[noitemsep,topsep=-6pt]
+            \item Testing and maintenance
+            \item Database programming
+        \end{itemize}
+        \columnbreak
+        \begin{itemize}[noitemsep,topsep=-6pt]
+            \item Agile
+            \item Database management software
+        \end{itemize}
+
+        \columnbreak
+
+        \begin{itemize}[noitemsep,topsep=-6pt]
+            \item Web Development
+            \item System Administration
+        \end{itemize}
+        
+        \end{multicols}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Summary 
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Summary}
+    Talented computer engineering student with industrious and systematic approach to learning information. Open and clear worker with disciplined execution and methodical nature. Extensive knowledge of programming and software skills.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{References}
+        \begin{multicols}{2}
+
+            \textbf{Jeannot Munganga} \\
+            \textit{Junior Developer at S-Squared} \\
+            jeannotngalula@gmail.com 
+
+        \columnbreak
+
+            \textbf{Jeannot Munganga} \\
+            \textit{Junior Developer at S-Squared} \\
+            jeannotngalula@gmail.com \\
+
+        \end{multicols}
+\end{rSection}
+
+
+
+
+
+\end{document}
