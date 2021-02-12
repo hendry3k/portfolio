@@ -19,7 +19,7 @@ social:
     url: https://www.linkedin.com/in/hendry-khoza-83a3a318a/
   - icon: download
     iconPack: fas
-    url: //localhost:1313/documents/letter/main.pdf
+    url: https://github.com/hendry3k/portfolio/raw/master/assets/documents/cv/hendry_khoza_cv.pdf
 
 weight: 1
 widget:
@@ -33,7 +33,7 @@ widget:
     position:
     # Options: sm, md, lg and xl. Default is md.
     scale:
-  
+
   background:
     # Options: primary, secondary, tertiary or any valid color value. Default is primary.
     color: secondary
@@ -43,11 +43,15 @@ widget:
     # Options: center, top, right, bottom, left.
     position:
     # Options: fixed, local, scroll.
-    attachment: 
+    attachment:
 ---
 
 # Self Introduction
 
-Welcome to my personal website. I'm a software engineer who is studying computer system Engineering at Tshwane University of Technology. Over the past 3 years I helped businesses to build their software, help them to reach millions of customers online. I have attendant many hackathons, I enjoy working with a team to build software that solves human problems. I met amazing software developers through hackathons and I believe when technology used right, it can reduce most of our problems, such as disease and poverty.
-
-
+Welcome to my personal website. I'm a software engineer who is studying
+computer system Engineering at Tshwane University of Technology. Over the past
+3 years I helped businesses to build their software, help them to reach
+millions of customers online. I have attendant many hackathons, I enjoy working
+with a team to build software that solves human problems. I met amazing
+software developers through hackathons and I believe when technology used
+right, it can reduce most of our problems, such as disease and poverty.
