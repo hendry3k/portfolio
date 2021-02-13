@@ -7,16 +7,15 @@ authors:
 tags:
 categories:
 series:
-date: '2020-11-20T22:52:56+08:00'
-lastmod: '2020-11-20T22:52:56+08:00'
+date: "2020-11-20T22:52:56+08:00"
+lastmod: "2020-11-20T22:52:56+08:00"
 featuredImage:
-draft: false
+draft: true
 ---
 
 Eureka supports the rendering of mathematical formulas by using KaTeX.
 
 <!--more-->
-
 
 You can type inline equation like $E=mc^2$.
 
@@ -25,7 +24,6 @@ And also displayed equation like:
 <div>
 \[ \int u \frac{dv}{dx}\, dx=uv-\int \frac{du}{dx}v\,dx \]
 </div>
-
 
 Matrix:
 

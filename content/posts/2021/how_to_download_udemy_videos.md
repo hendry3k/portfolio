@@ -3,7 +3,7 @@ title: "How To Download Videos on Udemy Using youtube-dl"
 date: 2021-01-29T00:23:34Z
 authors:
   - Hendry Khoza
-draft: true
+draft: false
 ---
 
 If you are like me the reason you choose udemy as a leaning platform is
